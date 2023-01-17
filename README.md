@@ -1,6 +1,6 @@
-# Spring Boot / Java / Postgres / JWT 
+# Spring Boot / Java / Postgres / JWT
 
-Boilerplate application implementing authentication via JWT in Spring Boot. 
+College project.
 
 * Java
 * Spring Boot
