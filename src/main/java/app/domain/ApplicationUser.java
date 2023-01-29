@@ -43,6 +43,7 @@ public class ApplicationUser {
     private List<Classroom> ownedClassrooms;
 
 
+    @JsonIgnore
     @OneToMany
     @JoinColumn(name = "teacherId", referencedColumnName = "id")
     private List<Grade> madeGrades;

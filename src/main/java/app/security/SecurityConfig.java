@@ -25,6 +25,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST, SecurityConstants.AUTH_LOGIN_URL, SecurityConstants.AUTH_REGISTER_URL)
                 .permitAll()
+                .antMatchers(HttpMethod.GET, SecurityConstants.SWAGGER_URL)
+                .permitAll()
                 .anyRequest().authenticated()
                 .and().exceptionHandling()
                 .and().csrf().disable();

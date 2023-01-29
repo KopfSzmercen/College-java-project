@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  wine_passion_db_dev:
+    image: postgres:14-alpine
+    container_name: projekt
+    restart: always
+    ports:
+      - 5433:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: projekt
+volumes:
+  pgdata:
+    name: projekt
